@@ -11,4 +11,4 @@ setContactOpen(false);
 contactToggle.addEventListener('click',()=>setContactOpen(contactToggle.getAttribute('aria-expanded')!=='true'));
 document.addEventListener('click',e=>{if(!contactRail.contains(e.target))setContactOpen(false)});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&contactToggle.getAttribute('aria-expanded')==='true'){setContactOpen(false);contactToggle.focus()}});
-contactPanel.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setContactOpen(false)));
+
